@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Beacon — EAA Chapter 563 — February 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0a1f44;
+      --navy-mid: #163266;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --gold-pale: #fdf6e3;
+      --white: #ffffff;
+      --text: #1a1a2e;
+      --text-light: #4a4a6a;
+      --rule: #c9a84c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', Georgia, serif;
+      background: #f4f0e8;
+      color: var(--text);
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    .masthead {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 2.5rem 1.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .masthead::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 18px,
+        rgba(201,168,76,0.06) 18px,
+        rgba(201,168,76,0.06) 19px
+      );
+    }
+    .masthead-inner { position: relative; z-index: 1; }
+    .chapter-label {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 0.4rem;
+    }
+    .masthead h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+    .masthead-rule {
+      width: 80px;
+      height: 3px;
+      background: var(--gold);
+      margin: 1rem auto;
+    }
+    .masthead-date {
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    .section {
+      margin-top: 2.5rem;
+      padding-top: 2rem;
+      border-top: 2px solid var(--rule);
+    }
+    .section:first-of-type { border-top: none; margin-top: 2rem; }
+
+    .section-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+
+    .sub-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin: 1.2rem 0 0.6rem;
+    }
+
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    .callout-list {
+      background: var(--navy);
+      border-left: 5px solid var(--gold);
+      border-radius: 4px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0 1.2rem;
+      list-style: none;
+    }
+    .callout-list li {
+      color: var(--white);
+      font-size: 0.95rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid rgba(201,168,76,0.2);
+      line-height: 1.5;
+    }
+    .callout-list li:last-child { border-bottom: none; }
+    .callout-list li strong { color: var(--gold-light); }
+
+    blockquote {
+      background: var(--gold-pale);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-style: italic;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    .highlight {
+      background: var(--navy-mid);
+      color: var(--white);
+      border-radius: 6px;
+      padding: 1.1rem 1.4rem;
+      margin: 1.2rem 0;
+      font-size: 0.95rem;
+    }
+    .highlight strong { color: var(--gold-light); }
+
+    footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+    }
+    footer strong { color: var(--gold); }
+
+    @media print {
+      body { background: white; font-size: 12pt; }
+      .masthead { background: white !important; color: black !important; border-bottom: 3pt solid #c9a84c; }
+      .masthead h1, .chapter-label, .masthead-date { color: black !important; }
+      .masthead::before { display: none; }
+      .callout-list { background: #eee !important; }
+      .callout-list li { color: black !important; }
+      .callout-list li strong { color: #0a1f44 !important; }
+      .highlight { background: #eee !important; color: black !important; }
+      .highlight strong { color: #0a1f44 !important; }
+      .section { page-break-inside: avoid; }
+      footer { background: none !important; color: #555 !important; border-top: 1pt solid #ccc; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="chapter-label">EAA Chapter 563</p>
+    <h1>The Beacon</h1>
+    <div class="masthead-rule"></div>
+    <p class="masthead-date">February 2026</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <section class="section">
+    <h2 class="section-heading">Chapter Blind Auction</h2>
+    <p>The winners of the five auction prizes were announced at the January chapter meeting:</p>
+    <ul class="callout-list">
+      <li><strong>Dick Barthel</strong> — Ride in a WW-II era radial engine airplane</li>
+      <li><strong>Joe Troglio</strong> — Plasma cut EAA wall hanging</li>
+      <li><strong>Greg LePine</strong> — Pair of airplane bookends</li>
+      <li><strong>Tom O'Toole</strong> — Radial engine wall clock</li>
+      <li><strong>Karl Kleimenhagen</strong> — Jar of honey and jar of apple butter</li>
+    </ul>
+    <p>The auction added roughly $400 to the chapter account, largely due to Ric Woldow's generous donation of a ride in one of his radial engine airplanes. Dick was asked which airplane he's chosen:</p>
+    <blockquote>
+      "I'm not sure. Mary is thinking about whether she would like a ride in the Stearman. I would love for Mary to have a ride in the Stearman, but if she declines, I would like to ride in the T-6. In no way should my choices be seen as trying to downplay the tremendous accomplishment of restoration of the Broussard... I'm thrilled to have this opportunity. Are parachutes included?"
+    </blockquote>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Breakfasts</h2>
+    <p>The kitchen is in dire need of volunteers the next few weeks. Assistance with set-up, cooking, and clean-up is needed — please step up if you can.</p>
+    <p>Todd Moore has invited all past Young Eagles to this Saturday's breakfast.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">VMC and IMC Clubs</h2>
+    <p>The VMC Club meets on the 25th. The IMC Club will not be meeting this month, but in March we have a special event open to the whole chapter:</p>
+    <div class="highlight">
+      <strong>March IMC Event:</strong> A meteorologist from Lincoln, Andrew Taylor, will speak on aviation weather and forecasting. Open to all chapter members, though it will have a distinct IMC flavor.
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">From Headquarters</h2>
+    <p>In EAA HQ's Chapter Video for January, they noted that with MOSAIC now in place, their two biggest regulatory priorities are integrating drones into the airspace and transitioning to unleaded aviation fuel. They are also addressing the growing number of electric scooters and similar vehicles at OSH 2026.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Youth Programs</h2>
+
+    <h3 class="sub-heading">Scholarships</h3>
+    <p>The chapter's application for a 2026 scholarship has been accepted. We expect to know by the end of February whether we will receive one.</p>
+    <p>At the January board meeting, Rob Meyer reported that Lincoln Land has been holding $2,500 from the chapter awaiting a candidate from the Peoria area. The board agreed to release $1,500 to any qualified candidate this year.</p>
+    <p>The Lewis University scholarship was also discussed. The board feels it is less effective than Lincoln Land's, since Lewis graduates tend to remain in the Chicago area. The board is leaning toward redirecting funds to Lincoln Land or flight training — discussions continue.</p>
+
+    <h3 class="sub-heading">Air Academy</h3>
+    <div class="highlight">
+      <strong>Congratulations to Samuel Spragg!</strong> One of the teens on the Cruzer build, Samuel has been accepted to the Air Academy at this summer's OSH fly-in. The chapter will cover half the cost, with a "campership" and Young Eagles credits from 2025 helping offset the rest.
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Airplane Building</h2>
+
+    <h3 class="sub-heading">Cruzer Build — Nearly Complete</h3>
+    <p>The avionics have been powered up and are being configured and tested. The seats are in, and the aft cabin side glazing is being installed. Work has begun on the windscreen and cabin top glazing.</p>
+    <p>The project has not yet found a buyer. Pricing has been challenging — record keeping across three treasurers over four years has been difficult to reconcile. Treasurer Mike Simmons and Karl Kleimenhagen are close to sorting it out. The board agrees the sale will come in below total expenditures, but that the intangible benefits — youth engagement and adult involvement in building — have been well worth it.</p>
+    <p>Future builds will be limited to the airframe, with engine and avionics installed only if supplied by the buyer.</p>
+
+    <h3 class="sub-heading">New RV-10 Project</h3>
+    <p>Sudheer Sajja and Sai Suchith Pesala from Pringle Robotics have purchased an RV-10 kit with about ten kids interested in building it. They will invite teens from the current Cruzer project to join, plan to become chapter members, and will use hangar space for the work. Cruzer mentors will be available to assist.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">On the Web</h2>
+    <p>MGL Avionics has a new U.S. distributor: <strong>Legit Avionics</strong> in Lafayette, IN.</p>
+    <p>AvBrief continues to grow. A recent feature covered <em>Piperzilla</em> — a modified Cherokee 180 with vortex generators and other upgrades that is outperforming some Super Cubs in STOL competitions. Your spam can might have more potential than you think.</p>
+    <p>AvBrief also reviewed electronic ignition systems. Of particular interest is an upcoming magneto from Champion — a fully self-contained electronic ignition system, including its own internal power generator, packaged to fit a conventional magneto pad. It should generate a spark down to 100 RPM.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Chapter Web Site</h2>
+    <p>The board has been discussing whether the current site (built in raw HTML/CSS) might benefit from a refresh. While it is low-cost and portable, it may be challenging for future editors to maintain. Board member Killian Madeley, who recently revamped the Bradley Flying Club site, will look into alternatives.</p>
+    <p>Adding more photos would help in the meantime. If you have photos from meetings or chapter events, please send them through the chapter email account.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Social Media</h2>
+    <p>The chapter now has accounts on <strong>Facebook</strong>, <strong>X</strong>, and <strong>Instagram</strong>, linked from the chapter home page. Todd Moore created and maintains these accounts.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Audit</h2>
+    <p>It's time to form an Audit Committee to review the chapter's 2025 financial records. The chapter president appoints three members (who must not be board members). Please talk to JJ if you're willing to serve.</p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Members</h2>
+    <div class="highlight">
+      <strong>Dues reminder:</strong> 2026 membership dues are overdue. $40 for individuals or families.
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Airport — 3MY</h2>
+    <p>Expect more turboprop noise at the airport. The hangar directly south of the chapter's is now home to a "Super" King Air.</p>
+    <p>Due to people using the airport dumpster for home improvement waste disposal, the dumpster is now locked. See the desk at the FBO for permission to use it.</p>
+  </section>
+
+</div>
+
+<footer>
+  <strong>EAA Chapter 563</strong> &nbsp;·&nbsp; The Beacon &nbsp;·&nbsp; February 2026
+</footer>
+
+</body>
+</html>
